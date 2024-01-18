@@ -27,22 +27,22 @@ class Book:
 
 # TODO написать класс Library
 class Library:
-    count = 0
-    dist_book_with_id = {}
+    books = []
     def __init__(self, books=[]):
-        self.books = books
-        for id, name in enumerate(books):
-            __class__.dist_book_with_id[name] = id + 1
-        __class__.count = len(books)
+        if (books is None):
+            raise ValueError
+        Library.books = books
+
     def get_next_book_id(self) ->int:
-        if __class__.count == 0:
-            return 1
-        return __class__.count + 1
+        if Library.books:
+            return len(Library.books) + 1
+        return 1
     def get_index_by_book_id(self, id_:int) -> int:
-        index = [i - 1 for i in list(__class__.dist_book_with_id.values()) if i == id_]
-        if not index:
+        if (len(Library.books) >= id_):
+            index = id_ - 1
+        else:
             raise ValueError("Книги с запрашиваемым id не существует")
-        return int(index[0])
+        return index
 
 if __name__ == '__main__':
     empty_library = Library()  # инициализируем пустую библиотеку
