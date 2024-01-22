@@ -30,15 +30,14 @@ class Library:
     books = []
     def __init__(self, books=[]):
         if (books is None):
-            raise ValueError
-        Library.books = books
-
+            books = []
+        self.books = books
     def get_next_book_id(self) ->int:
-        if Library.books:
-            return len(Library.books) + 1
+        if self.books:
+            return len(self.books) + 1
         return 1
     def get_index_by_book_id(self, id_:int) -> int:
-        if (len(Library.books) >= id_):
+        if (len(self.books) >= id_):
             index = id_ - 1
         else:
             raise ValueError("Книги с запрашиваемым id не существует")
@@ -55,4 +54,6 @@ if __name__ == '__main__':
     print(library_with_books.get_next_book_id())  # проверяем следующий id для непустой библиотеки
 
     print(library_with_books.get_index_by_book_id(1))  # проверяем индекс книги с id = 1
+
+
 
