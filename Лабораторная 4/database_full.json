@@ -1,0 +1,30 @@
+[
+    {
+        "Product": "\u0424\u0443\u0442\u0431\u043e\u043b\u043a\u0430 \u043c\u0443\u0436\u0441\u043a\u0430\u044f",
+        "Cost": 1500.0,
+        "Status": "add",
+        "Model": "Adidas",
+        "Size": 50
+    },
+    {
+        "Product": "\u041a\u0440\u043e\u0441\u043e\u0432\u043a\u0438 \u043c\u0443\u0436\u0441\u043a\u0438\u0435",
+        "Cost": 5500.0,
+        "Status": "add",
+        "Model": "Puma",
+        "Size": 42
+    },
+    {
+        "Product": "\u0414\u0436\u0438\u043d\u0441\u044b \u0436\u0435\u043d\u0441\u043a\u0438\u0435",
+        "Cost": 2500.0,
+        "Status": "add",
+        "Model": "JG",
+        "Size": 36
+    },
+    {
+        "Product": "\u041a\u0443\u0440\u0442\u043a\u0430 \u0436\u0435\u043d\u0441\u043a\u0430\u044f",
+        "Cost": 6000.0,
+        "Status": "add",
+        "Model": "JG",
+        "Size": 46
+    }
+]
