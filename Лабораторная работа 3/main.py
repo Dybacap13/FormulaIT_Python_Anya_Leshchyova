@@ -1,12 +1,12 @@
 class Book:
     """ Базовый класс книги. """
     def __init__(self, name: str, author: str):
-        self.check_param(name, author)
-        self._name = name
-        self._author = author
-    def check_param(self, name: str, author: str):
         if not isinstance(name, str) or not isinstance(author, str):
             raise TypeError("param must can str")
+        self._name = name
+        self._author = author
+    
+        
 
     @property
     def name(self) -> str:
