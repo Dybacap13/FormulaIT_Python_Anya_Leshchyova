@@ -5,8 +5,6 @@ class Book:
             raise TypeError("param must can str")
         self._name = name
         self._author = author
-    
-        
 
     @property
     def name(self) -> str:
